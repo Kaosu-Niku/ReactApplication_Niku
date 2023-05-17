@@ -13,52 +13,52 @@ function HTMLBasic(props) {
                 <h1>HTML文件架構</h1>
                 <p>一份標準的HTML文件至少需含有以下內容</p>
                 <code>  </code>
-                <code>  &lt;!DOCTYPE html&gt;</code>
+                <code>  {'<'}!DOCTYPE html{'>'}</code>
                 <code>  </code>
-                <code>  &lt;html&gt;</code>
+                <code>  {'<'}html{'>'}</code>
                 <code>  </code>
-                <code>      &lt;head&gt;</code>
+                <code>      {'<'}head{'>'}</code>
                 <code>  </code>
-                <code>      &lt;/head&gt;</code>
+                <code>      {'<'}/head{'>'}</code>
                 <code>  </code>
-                <code>      &lt;body&gt;</code>
+                <code>      {'<'}body{'>'}</code>
                 <code>  </code>
-                <code>      &lt;/body&gt;</code>
+                <code>      {'<'}/body{'>'}</code>
                 <code>  </code>
-                <code>  &lt;/html&gt;</code>
+                <code>  {'<'}/html{'>'}</code>
                 <code>  </code>
-                <p>&lt;!DOCTYPE html&gt; 用於宣告這是一個使用了HTML架構的文件，是任何HTML文件最開頭必備的元素。</p>
-                <p>&lt;html&gt; 用於包含網頁的全部內容的根元素。</p>
-                <p>&lt;head&gt; 用於包含網頁的所有數據內容，該元素的內容不會呈現給用戶端。</p>
-                <p>&lt;body&gt; 用於包含網頁的所有呈現內容，該元素的內容會呈現給用戶端。</p>
+                <p>{'<'}!DOCTYPE html{'>'} 用於宣告這是一個使用了HTML架構的文件，是任何HTML文件最開頭必備的元素。</p>
+                <p>{'<'}html{'>'} 用於包含網頁的全部內容的根元素。</p>
+                <p>{'<'}head{'>'} 用於包含網頁的所有數據內容，該元素的內容不會呈現給用戶端。</p>
+                <p>{'<'}body{'>'} 用於包含網頁的所有呈現內容，該元素的內容會呈現給用戶端。</p>
             </div>
             <div className="flex content-div">
                 <h1>HTML文件常用設置</h1>
                 <code>  </code>
-                <code>  &lt;!DOCTYPE html&gt;</code>
+                <code>  {'<'}!DOCTYPE html{'>'}</code>
                 <code>  </code>
-                <code>  &lt; html lang="zh-tw"&gt;</code>
+                <code>  {'<'} html lang="zh-tw"{'>'}</code>
                 <code>  </code>
-                <code>      &lt;head&gt;</code>
-                <code>          &lt;meta charset="utf-8"&gt;</code>
-                <code>          &lt;title&gt;WebpageName&lt;/title&gt;</code>
-                <code>          &lt;link rel="icon" href="Data.png"&gt;</code>
-                <code>          &lt;link rel="stylesheet" href="Data.css"&gt;</code>
-                <code>          &lt;script src="Data.js"&gt;&lt;/script&gt;</code>
-                <code>      &lt;/head&gt;</code>
+                <code>      {'<'}head{'>'}</code>
+                <code>          {'<'}meta charset="utf-8"{'>'}</code>
+                <code>          {'<'}title{'>'}WebpageName{'<'}/title{'>'}</code>
+                <code>          {'<'}link rel="icon" href="Data.png"{'>'}</code>
+                <code>          {'<'}link rel="stylesheet" href="Data.css"{'>'}</code>
+                <code>          {'<'}script src="Data.js"{'>'}{'<'}/script{'>'}</code>
+                <code>      {'<'}/head{'>'}</code>
                 <code>  </code>
-                <code>      &lt;body&gt;</code>
+                <code>      {'<'}body{'>'}</code>
                 <code>  </code>
-                <code>      &lt;/body&gt;</code>
+                <code>      {'<'}/body{'>'}</code>
                 <code>  </code>
-                <code>  &lt;/html&gt;</code>
+                <code>  {'<'}/html{'>'}</code>
                 <code>  </code>
-                <p>&lt;html lang="zh-tw"&gt; 用於設置使用的語言(zh-tw代表繁體中文)。</p>
-                <p>&lt;meta charset="utf-8"&gt; 用於設置網頁所使用的編碼(盡量使用utf-8編碼，含有世上絕大多數語言文字)。</p>
-                <p>&lt;title&gt; 用於設置網頁的標頭(在瀏覽器分頁上可見的名稱)。</p>
-                <p>&lt;link rel="icon" href="Data.png"&gt; 用於連結圖片並將其設置成網頁的icon。</p>
-                <p>&lt;link rel="stylesheet" href="Data.css"&gt; 用於連結CSS文件。</p>
-                <p>&lt; script src="Data.js"&gt; &lt; /script&gt; 用於執行JavaScript腳本。(執行到這個的當下就會立即執行腳本且會等待腳本執行完畢，所以須注意執行順序問題)</p>
+                <p>{'<'}html lang="zh-tw"{'>'} 用於設置使用的語言(zh-tw代表繁體中文)。</p>
+                <p>{'<'}meta charset="utf-8"{'>'} 用於設置網頁所使用的編碼(盡量使用utf-8編碼，含有世上絕大多數語言文字)。</p>
+                <p>{'<'}title{'>'} 用於設置網頁的標頭(在瀏覽器分頁上可見的名稱)。</p>
+                <p>{'<'}link rel="icon" href="Data.png"{'>'} 用於連結圖片並將其設置成網頁的icon。</p>
+                <p>{'<'}link rel="stylesheet" href="Data.css"{'>'} 用於連結CSS文件。</p>
+                <p>{'<'} script src="Data.js"{'>'} {'<'} /script{'>'} 用於執行JavaScript腳本。(執行到這個的當下就會立即執行腳本且會等待腳本執行完畢，所以須注意執行順序問題)</p>
             </div>
             <div className="flex content-div">
                 <h1>DOM</h1>
@@ -72,9 +72,9 @@ function HTMLBasic(props) {
                 <h1>特殊符號轉義</h1>
                 <p>以下特殊符號在HTML文件裡具有其意義，若要於字串中表示需使用轉義。</p>
                 <p> &amp; = &amp;amp</p>
-                <p>&lt; = &amp;lt</p>
-                <p>&gt; = &amp;gt</p>
-                <p>&quot; = &amp;quot</p>
+                <p>{'<'} = &amp;lt</p>
+                <p>{'>'} = &amp;gt</p>
+                <p>{"'"} = &amp;quot</p>
             </div>
         </div>
     );

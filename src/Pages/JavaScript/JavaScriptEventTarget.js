@@ -159,7 +159,7 @@ function JavaScriptEventTarget(props) {
                 <p>對象可以添加特定事件的監聽器 (事件的觸發皆有其條件，ex: click是滑鼠點擊該對象時)</p>
                 <p>當特定事件被觸發時，將會執行監聽器設定的callback方法 (一個特定事件可以設定多個callback方法，預設執行順序是按照方法的設定順序)</p>
                 <h2>EventBubbling</h2>
-                <p>DOM的事件觸發具有傳播性，觸發事件時會以該元素的層級依序往上層傳遞觸發直到&lt;html&gt;層級，此概念稱為事件氣泡。</p>
+                <p>DOM的事件觸發具有傳播性，觸發事件時會以該元素的層級依序往上層傳遞觸發直到{'<'}html{'>'}層級，此概念稱為事件氣泡。</p>
                 <h2>EventObject</h2>
                 <p>大部分的事件監聽器觸發時會對執行方法傳遞回調參數，透過回調參數可以得知該觸發事件的詳細資訊，此傳遞參數稱為事件物件。</p>
                 <p>(ex: 觸發keydown事件時會傳遞KeyboardEvent類型的事件物件，其中的key屬性可以返回按下的按鍵名稱)</p>
@@ -177,7 +177,7 @@ function JavaScriptEventTarget(props) {
                 <p>取消事件氣泡傳遞</p>
                 <h3>EventObject.preventDefault()</h3>
                 <p>取消瀏覽器預設的行為</p>
-                <p>(ex: 對&lt;a&gt;觸發click事件會自動開啟新網頁)</p>
+                <p>(ex: 對{'<'}a{'>'}觸發click事件會自動開啟新網頁)</p>
             </div>
             <div className="flex content-div">
                 <h1>EventType</h1>
@@ -185,121 +185,121 @@ function JavaScriptEventTarget(props) {
                 <p>括號後方標註的是 (eventType參數可填入的值)</p>
                 <p>(事件類型若只針對特定HTML元素運作會額外註記)</p>
 
-                <h3>keydown =&gt; KeyboardEvent</h3>
+                <h3>keydown ={'>'} KeyboardEvent</h3>
                 <p>按下鍵盤任意鍵時</p>
-                <h3>keyup =&gt;
+                <h3>keyup ={'>'}
                     KeyboardEvent</h3>
                 <p>按下並鬆開鍵盤任意鍵時</p>
-                <h3>copy =&gt; ClipboardEvent</h3>
+                <h3>copy ={'>'} ClipboardEvent</h3>
                 <p>Ctrl+C 複製該對象時</p>
-                <h3>cut =&gt; ClipboardEvent</h3>
+                <h3>cut ={'>'} ClipboardEvent</h3>
                 <p>Ctrl+X 剪下該對象時</p>
-                <h3>paste =&gt; ClipboardEvent</h3>
+                <h3>paste ={'>'} ClipboardEvent</h3>
                 <p>Ctrl+V 貼上該對象時</p>
 
-                <h3>mouseover =&gt; MouseEvent</h3>
+                <h3>mouseover ={'>'} MouseEvent</h3>
                 <p>鼠標進入該對象的範圍時</p>
-                <h3>mousemove =&gt; MouseEvent</h3>
+                <h3>mousemove ={'>'} MouseEvent</h3>
                 <p>鼠標在該對象的範圍內移動時持續觸發</p>
-                <h3>mouseout =&gt; MouseEvent</h3>
+                <h3>mouseout ={'>'} MouseEvent</h3>
                 <p>鼠標離開該對象的範圍時</p>
-                <h3>mousedown =&gt; MouseEvent</h3>
+                <h3>mousedown ={'>'} MouseEvent</h3>
                 <p>滑鼠任意鍵按下該對象時</p>
-                <h3>mouseup =&gt; MouseEvent</h3>
+                <h3>mouseup ={'>'} MouseEvent</h3>
                 <p>滑鼠任意鍵按下並鬆開該對象時</p>
-                <h3>click =&gt; MouseEvent</h3>
+                <h3>click ={'>'} MouseEvent</h3>
                 <p>滑鼠左鍵按下並鬆開該對象時</p>
-                <h3>dblclick =&gt; MouseEvent</h3>
+                <h3>dblclick ={'>'} MouseEvent</h3>
                 <p>滑鼠左鍵快速兩次按下並鬆開該對象時</p>
-                <h3>contextmenu =&gt; MouseEvent</h3>
+                <h3>contextmenu ={'>'} MouseEvent</h3>
                 <p>滑鼠右鍵按下並鬆開該對象開啟選單時</p>
-                <h3>wheel =&gt; WheelEvent</h3>
+                <h3>wheel ={'>'} WheelEvent</h3>
                 <p>滑鼠滾輪滾動時持續觸發</p>
 
-                <h3>touchenter =&gt; TouchEvent</h3>
+                <h3>touchenter ={'>'} TouchEvent</h3>
                 <p>手指滑動進入該對象的範圍時</p>
-                <h3>touchmove =&gt; TouchEvent</h3>
+                <h3>touchmove ={'>'} TouchEvent</h3>
                 <p>手指在該對象的範圍內滑動時持續觸發</p>
-                <h3>touchleave =&gt; TouchEvent</h3>
+                <h3>touchleave ={'>'} TouchEvent</h3>
                 <p>手指滑動離開該對象的範圍時</p>
-                <h3>touchstart =&gt; TouchEvent</h3>
+                <h3>touchstart ={'>'} TouchEvent</h3>
                 <p>手指觸碰該對象時</p>
-                <h3>touchend =&gt; TouchEvent</h3>
+                <h3>touchend ={'>'} TouchEvent</h3>
                 <p>手指觸碰並離開該對象時</p>
 
-                <h3>transitionend =&gt; TransitionEvent</h3>
+                <h3>transitionend ={'>'} TransitionEvent</h3>
                 <p>CSS過渡完成時</p>
-                <h3>animationstart =&gt; AnimationEvent</h3>
+                <h3>animationstart ={'>'} AnimationEvent</h3>
                 <p>CSS動畫播放開始時</p>
-                <h3>animationend =&gt; AnimationEvent</h3>
+                <h3>animationend ={'>'} AnimationEvent</h3>
                 <p>CSS動畫播放完畢時</p>
-                <h3>animationiteration =&gt; AnimationEvent</h3>
+                <h3>animationiteration ={'>'} AnimationEvent</h3>
                 <p>CSS動畫重複播放完畢時 (只播放一次不會觸發該事件)</p>
 
-                <h3>load =&gt; Event</h3>
+                <h3>load ={'>'} Event</h3>
                 <p>對象加載完畢時</p>
-                <i>可用元素: &lt;body&gt;,&lt;link&gt;,&lt;style&gt;,&lt;script&gt;,&lt;iframe&gt;,&lt;img&gt;,&lt;input type="image"&gt;</i>
-                <h3>error =&gt; Event</h3>
+                <i>可用元素: {'<'}body{'>'},{'<'}link{'>'},{'<'}style{'>'},{'<'}script{'>'},{'<'}iframe{'>'},{'<'}img{'>'},{'<'}input type="image"{'>'}</i>
+                <h3>error ={'>'} Event</h3>
                 <p>對象加載失敗時</p>
-                <i>可用元素: &lt;link&gt;,&lt;script&gt;,&lt;object&gt;,&lt;img&gt;,&lt;input type="image"&gt;</i>
-                <h3>unload =&gt; Event</h3>
+                <i>可用元素: {'<'}link{'>'},{'<'}script{'>'},{'<'}object{'>'},{'<'}img{'>'},{'<'}input type="image"{'>'}</i>
+                <h3>unload ={'>'} Event</h3>
                 <p>網頁關閉或是重新整理時</p>
-                <h3>resize =&gt; UIEvent</h3>
+                <h3>resize ={'>'} UIEvent</h3>
                 <p>視窗大小改變時</p>
-                <h3>scroll =&gt; Event</h3>
+                <h3>scroll ={'>'} Event</h3>
                 <p>拖動網頁視窗時</p>
-                <h3>focus =&gt; FocusEvent</h3>
+                <h3>focus ={'>'} FocusEvent</h3>
                 <p>獲得焦點時</p>
-                <h3>blur =&gt; FocusEvent</h3>
+                <h3>blur ={'>'} FocusEvent</h3>
                 <p>失去焦點時</p>
-                <h3>toggle =&gt; Event</h3>
-                <p>&lt;details&gt;展開和收回時</p>
-                <i>可用元素: &lt;details&gt;</i>
-                <h3>show =&gt; Event</h3>
-                <p>&lt;menu&gt;展開時</p>
-                <i>可用元素: &lt;menu&gt;</i>
-                <h3>abort =&gt; Event</h3>
+                <h3>toggle ={'>'} Event</h3>
+                <p>{'<'}details{'>'}展開和收回時</p>
+                <i>可用元素: {'<'}details{'>'}</i>
+                <h3>show ={'>'} Event</h3>
+                <p>{'<'}menu{'>'}展開時</p>
+                <i>可用元素: {'<'}menu{'>'}</i>
+                <h3>abort ={'>'} Event</h3>
                 <p>多媒體資源加載失敗時</p>
-                <i>可用元素: &lt;audio&gt;,&lt;video&gt;</i>
-                <h3>canplay =&gt; Event</h3>
+                <i>可用元素: {'<'}audio{'>'},{'<'}video{'>'}</i>
+                <h3>canplay ={'>'} Event</h3>
                 <p>多媒體資源可以播放時</p>
-                <i>可用元素: &lt;audio&gt;,&lt;video&gt;</i>
-                <h3>play =&gt; Event</h3>
+                <i>可用元素: {'<'}audio{'>'},{'<'}video{'>'}</i>
+                <h3>play ={'>'} Event</h3>
                 <p>多媒體資源被播放或從暫停狀態繼續播放時</p>
-                <i>可用元素: &lt;audio&gt;,&lt;video&gt;</i>
-                <h3>timeupdate =&gt; Event</h3>
+                <i>可用元素: {'<'}audio{'>'},{'<'}video{'>'}</i>
+                <h3>timeupdate ={'>'} Event</h3>
                 <p>多媒體資源播放進行時持續觸發</p>
-                <i>可用元素: &lt;audio&gt;,&lt;video&gt;</i>
-                <h3>pause =&gt; Event</h3>
+                <i>可用元素: {'<'}audio{'>'},{'<'}video{'>'}</i>
+                <h3>pause ={'>'} Event</h3>
                 <p>多媒體資源暫停播放時</p>
-                <i>可用元素: &lt;audio&gt;,&lt;video&gt;</i>
-                <h3>ended =&gt; Event</h3>
+                <i>可用元素: {'<'}audio{'>'},{'<'}video{'>'}</i>
+                <h3>ended ={'>'} Event</h3>
                 <p>多媒體資源播放完畢時</p>
-                <i>可用元素: &lt;audio&gt;,&lt;video&gt;</i>
-                <h3>ratechange =&gt; Event</h3>
+                <i>可用元素: {'<'}audio{'>'},{'<'}video{'>'}</i>
+                <h3>ratechange ={'>'} Event</h3>
                 <p>改變多媒體資源的播放速度時</p>
-                <i>可用元素: &lt;audio&gt;,&lt;video&gt;</i>
-                <h3>volumechange =&gt; Event</h3>
+                <i>可用元素: {'<'}audio{'>'},{'<'}video{'>'}</i>
+                <h3>volumechange ={'>'} Event</h3>
                 <p>改變多媒體資源的音量時</p>
-                <i>可用元素: &lt;audio&gt;,&lt;video&gt;</i>
-                <h3>input =&gt; InputEvent</h3>
-                <p>用戶對&lt;input&gt;輸入時</p>
-                <i>可用元素: &lt;input&gt;</i>
-                <h3>change =&gt; Event</h3>
+                <i>可用元素: {'<'}audio{'>'},{'<'}video{'>'}</i>
+                <h3>input ={'>'} InputEvent</h3>
+                <p>用戶對{'<'}input{'>'}輸入時</p>
+                <i>可用元素: {'<'}input{'>'}</i>
+                <h3>change ={'>'} Event</h3>
                 <p>數值改變時</p>
-                <i>可用元素: &lt;input&gt;,&lt;textarea&gt;,&lt;select&gt;</i>
-                <h3>invaild =&gt; Event</h3>
-                <p>&lt;input&gt;的輸入值無效時</p>
-                <i>可用元素: &lt;input&gt;</i>
-                <h3>reset =&gt; Event</h3>
+                <i>可用元素: {'<'}input{'>'},{'<'}textarea{'>'},{'<'}select{'>'}</i>
+                <h3>invaild ={'>'} Event</h3>
+                <p>{'<'}input{'>'}的輸入值無效時</p>
+                <i>可用元素: {'<'}input{'>'}</i>
+                <h3>reset ={'>'} Event</h3>
                 <p>重置表單時</p>
-                <i>可用元素: &lt;form&gt;</i>
-                <h3>submit =&gt; Event</h3>
+                <i>可用元素: {'<'}form{'>'}</i>
+                <h3>submit ={'>'} Event</h3>
                 <p>提交表單時</p>
-                <i>可用元素: &lt;form&gt;</i>
-                <h3>close =&gt; Event</h3>
-                <p>&lt;dialog&gt;提示框被關閉時</p>
-                <i>可用元素: &lt;dialog&gt;</i>
+                <i>可用元素: {'<'}form{'>'}</i>
+                <h3>close ={'>'} Event</h3>
+                <p>{'<'}dialog{'>'}提示框被關閉時</p>
+                <i>可用元素: {'<'}dialog{'>'}</i>
             </div>
             <div className="flex content-div">
                 <div style={{ borderStyle: "solid" }}>

@@ -5,11 +5,11 @@ function ExpressJSMiddleware(props) {
         <div className="flex main-content-div-iframe">
             <div class="flex content-div">
                 <h1>Middleware(中間件)</h1>
-                <p>Middleware本質是一個固定格式的函式，範例:<code>function middleware(request, response, next) {"{"} {"}"}</code></p>
+                <p>Middleware本質是一個固定格式的函式，範例:<code>function middleware(request, response, next) {'{'} {'}'}</code></p>
                 <p>在Node.js中，接收HTTP請求時會調用中間件來處理請求，Express.js將中間件包裝為含有request,response,next三個參數的函式，</p>
                 <p>request參數含有該請求的相關資訊，response參數含有回應該請求的方法，next參數用於結束當前中間件的執行並調用下一個中間件，</p>
                 <p>與監聽HTTP請求相關的函式，其調用的一律是最後一個中間件，由於後面已經沒有接續的中間件需要調用，因此也不需要調用next()可以省略next參數。</p>
-                <p>請求範例:<code>app.post("/",(request, response) =&gt; {"{"} {"}"})</code></p>
+                <p>請求範例:<code>app.post("/",(request, response) ={'>'} {'{'} {'}'})</code></p>
                 <p>而使用下列函式插入的Middleware一律執行於監聽函式的中間件之前，因此可以讓監聽函式接收到先經過其他中間件處理過的參數。</p>
                 <p>執行<code>app.use(middleware);</code>使用指定的中間件，中間件可以使用多個，按照腳本執行順序依序調用。</p>
             </div>

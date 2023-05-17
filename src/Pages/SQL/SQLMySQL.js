@@ -128,13 +128,13 @@ function SQLMySQL(props) {
                 <h3>取得表格內符合條件的所有資料</h3>
                 <code>select * from 表格 where 條件式;</code>
                 <h3>條件式範例</h3>
-                <p>where 條件 and 條件 =&gt; 所有條件皆符合就true</p>
-                <p>where 條件 or 條件 =&gt; 只需其中一個條件符合就true</p>
-                <p>where not 條件 =&gt; 條件不符合就true</p>
-                <p>where 字段 in ("你好","愛你","再見") =&gt; 資料符合其中一個值就true</p>
+                <p>where 條件 and 條件 ={'>'} 所有條件皆符合就true</p>
+                <p>where 條件 or 條件 ={'>'} 只需其中一個條件符合就true</p>
+                <p>where not 條件 ={'>'} 條件不符合就true</p>
+                <p>where 字段 in ("你好","愛你","再見") ={'>'} 資料符合其中一個值就true</p>
                 <p>where 字段 between 10 and 20 =&gt 資料的值在該範圍內就true</p>
-                <p>where 字段 is null =&gt; 資料是空值就true</p>
-                <p>where 條件 and 條件 =&gt; 所有條件皆符合就true</p>
+                <p>where 字段 is null ={'>'} 資料是空值就true</p>
+                <p>where 條件 and 條件 ={'>'} 所有條件皆符合就true</p>
 
                 <h2>函式計算</h2>
                 <a href="https://zh.wikipedia.org/zh-tw/SQL#SQL.E5.87.BD.E6.95.B0">SQL函式參考</a>

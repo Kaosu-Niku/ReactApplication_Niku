@@ -47,27 +47,27 @@ function TypeScriptSyntax(props) {
             <div className="flex content-div">
                 <h1>新增數據集合</h1>
                 <p>添加一個新的數據集合，該數據集合可做為類型註解使用</p>
-                <code>interface I {"{"} a: number, b: string, c: boolean {"}"}</code>
-                <code>let a: I = {"{"} a = 1, b = "字串", c = true {"}"} {"//"} 必須指定與數據集合相同類型的資料</code>
+                <code>interface I {'{'} a: number, b: string, c: boolean {'}'}</code>
+                <code>let a: I = {'{'} a = 1, b = "字串", c = true {'}'} {"//"} 必須指定與數據集合相同類型的資料</code>
                 <p>以上例子等同於下列</p>
-                <code>type I = {"{"} a: number, b: string, c: boolean {"}"}</code>
+                <code>type I = {'{'} a: number, b: string, c: boolean {'}'}</code>
                 <p>interface和type的差異，interface具有擴充性，可以隨意擴充成員</p>
-                <code>interface I {"{"} d: any, e: undefined {"}"} {"//"} 現在註解為I類型的變數還要再添加d和e的資料</code>
+                <code>interface I {'{'} d: any, e: undefined {'}'} {"//"} 現在註解為I類型的變數還要再添加d和e的資料</code>
             </div>
             <div className="flex content-div">
                 <h1>函式參數</h1>
                 <p>函式的參數也可使用類型註解</p>
-                <code>function f(a: number, b: string) {"{"} {"}"}</code>
+                <code>function f(a: number, b: string) {'{'} {'}'}</code>
                 <code>f(1, "字串"); // 正確</code>
                 <code style={{ color: "red" }}>f(1, 2); // 錯誤，第二個參數必須指定字串類型</code>
                 <p>註解?的參數表示為可忽略的參數，調用函式時可以選擇忽略該參數 (所有可忽略的參數都必須宣告在後面)</p>
-                <code>function f(a: number, b?: string) {"{"} {"}"}</code>
+                <code>function f(a: number, b?: string) {'{'} {'}'}</code>
                 <code>f(1); // 可以忽略參數b</code>
-                <code style={{ color: "red" }}>function f(a?: number, b: string) {"{"} {"}"} {"//"} 錯誤，可忽略的參數不可以宣告於任何不可忽略的參數前面</code>
+                <code style={{ color: "red" }}>function f(a?: number, b: string) {'{'} {'}'} {"//"} 錯誤，可忽略的參數不可以宣告於任何不可忽略的參數前面</code>
             </div>
             <div className="flex content-div">
                 <h1>泛型</h1>
-                <code>function f&ltT&gt(a: T) {"{"} {"}"}</code>
+                <code>function f&ltT&gt(a: T) {'{'} {'}'}</code>
                 <code>f&ltnumber&gt(1); // 泛型為number類型</code>
                 <code>f&ltstring&gt("字串"); // 泛型為string類型</code>
             </div>

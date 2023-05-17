@@ -5,7 +5,7 @@ function CSSBoxModel(props) {
         <div className="flex main-content-div-iframe">
             <div className="flex content-div">
                 <h1>盒模型(Box Model)</h1>
-                <p>所有置於&lt;body&gt;內的HTML元素都擁有一個盒模型，盒模型代表了該元素在網頁上所使用的空間。</p>
+                <p>所有置於{'<'}body{'>'}內的HTML元素都擁有一個盒模型，盒模型代表了該元素在網頁上所使用的空間。</p>
                 <p>每個盒模型預設的構造由四個部分組成，由內到外一層一層分別是，content、padding、border、margin。</p>
                 <p>content是中間內容所佔的空間。</p>
                 <p>padding是填充空間，包覆content外圍的空間。</p>

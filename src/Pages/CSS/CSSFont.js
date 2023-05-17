@@ -32,10 +32,10 @@ function CSSFont(props) {
                         <p style={{ fontFamily: "my-font" }}>This is my custon font.</p>
                     </div>
                 </div>
-                <code>@font-face {"{"}</code>
+                <code>@font-face {'{'}</code>
                 <code>    font-family: my-font;</code>
                 <code>    src: url("/Asset/Font/VeganStylePersonalUse-5Y58.ttf");</code>
-                <code>{"}"}</code>
+                <code>{'}'}</code>
             </div>
             <div class="flex content-div">
                 <h1>字體設置</h1>

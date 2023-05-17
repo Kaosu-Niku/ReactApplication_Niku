@@ -34,7 +34,7 @@ function CSSSelector(props) {
             </div>
             <div className="flex content-div">
                 <h1>子代選擇器</h1>
-                <p>h1 &gt; p { }</p>
+                <p>h1 {'>'} p { }</p>
                 <p>此例代表所有父元素是h1的p的元素。</p>
             </div>
             <div className="flex content-div">
@@ -65,15 +65,15 @@ function CSSSelector(props) {
                 <h3>:visited</h3>
                 <p>已被使用者訪問過的連結(具有herf屬性的元素)</p>
                 <h3>:valid</h3>
-                <p>填入的數值符合資料型別(&lt;input&gt;元素)</p>
+                <p>填入的數值符合資料型別({'<'}input{'>'}元素)</p>
                 <h3>:invalid</h3>
-                <p>填入的數值不符合資料型別(&lt;input&gt;元素)</p>
+                <p>填入的數值不符合資料型別({'<'}input{'>'}元素)</p>
                 <h3>:in-range</h3>
                 <p>當前值正在範圍中的元素(具有min/max屬性的元素)</p>
                 <h3>:out-of-range</h3>
                 <p>當前值不在範圍中的元素(具有min/max屬性的元素)</p>
                 <h3>:checked</h3>
-                <p>單選框或確認框被選中時(&lt;input type="radio"&gt;或&lt;input type="checkbox"&gt;)</p>
+                <p>單選框或確認框被選中時({'<'}input type="radio"{'>'}或{'<'}input type="checkbox"{'>'})</p>
 
                 <h2>層級類型</h2>
                 <h3>:before</h3>

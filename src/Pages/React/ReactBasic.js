@@ -9,7 +9,7 @@ function ReactBasic(props) {
                 <h2>AJAX是什麼</h2>
                 <p>AJAX是一個網頁技術，其技術基底實現於JavaScript的XMLHttpRequest對象，</p>
                 <p>AJAX可以實現更好的網頁運作，主要有以下幾點，</p>
-                <p>1. 不觸發網頁重新加載的情況下變更網頁的內容</p>
+                <p>1. 不觸發網頁重新加載而是只重新加載網頁中的部分內容，實現動態網頁功能</p>
                 <p>2. 向伺服器讀取和發送數據</p>
                 <h2>React概念。</h2>
                 <h3>元件式開發</h3>
@@ -31,8 +31,11 @@ function ReactBasic(props) {
                 <p>啟動測試運行器</p>
                 <h2>React檔案結構解析</h2>
                 <p>建構React應用程式後會於路徑下新增一個自訂名稱的資料夾，裡面含有應用程式的內容以及連帶安裝的模塊。</p>
-                <p>public資料夾內的index.html和src資料夾內的index.js是React應用程式預設執行的HTML主文件和JS文件，</p>
-                <p>React的運作原理是通過掛載或卸載元件或改變元件狀態觸發對一個HTML主文件重新渲染重新呈現新的網頁狀態內容，</p>
+                <p>public資料夾內可以放置資源(ex: 圖片、影音...等)，React環境內直接讀取public資料夾的內容，</p>
+                <p>(假設資源在當前位置: public/asset/image/hello.jpg)，路徑只需設定 /asset/image/hello.jpg 即可獲取資源 </p>
+                <p>public資料夾內的index.html是React應用程式所渲染的HTML主文件，</p>
+                <p>src資料夾內的index.js是React應用程式所執行的JS主元件，</p>
+                <p>React的運作原理是通過掛載或卸載元件或改變元件狀態觸發對HTML主文件重新渲染重新呈現新的網頁狀態內容，</p>
                 <p>因此使用React開發相比於原生的開發方式，可省去了大量的重複性內容，還使得開發效率和維護性都大幅提升。</p>
                 <p>index.js已經預設使用了一個範例元件App.js，在啟動一個預設的React應用程式時見到的初始網頁內容就是App.js的內容。</p>
             </div>
@@ -51,13 +54,13 @@ function ReactBasic(props) {
             <div className="flex content-div">
                 <h1>打包靜態文件</h1>
                 <h2>打包</h2>
-                <p>開發環境的React檔案實際上不能直接使用，必須經過打包成靜態文件後才能將靜態文件交由瀏覽器或是伺服器使用，</p>
-                <p>CMD運行<code>npm run build</code>即可運行React內建的打包流程，打包完成後於同路徑下新增一個build資料夾</p>
-                <p>build資料夾下包含的就是打包完的靜態文件，build資料夾下的index.html文件就是要提供給瀏覽器或是伺服器的HTML靜態文件，</p>
-                <p>查看index.html靜態文件的內容可以發現該文件引用了一個CSS文件和JS文件，這兩個文件是React應用程式所有的CSS和JS內容經過集合打包產生的靜態文件，</p>
-                <p>因此只需要這三個靜態文件即可完整運行React應用程式的所有內容，但index.html還無法直接取得這兩個靜態文件，</p>
-                <p>除了伺服器端在根路徑"/"回應index.html文件的同持，也需要根據index.html的請求路徑回應兩個相應的靜態文件</p>
-                <p>(!!每一次重新打包，只要CSS或JS的內容有改變，則產生的靜態文件其名稱以及index.html的請求路徑都會改變，因此伺服器端也需要更新!!)</p>
+                <p>開發環境的React檔案不能直接使用，必須經過打包轉換成靜態文件後才能將靜態文件交由瀏覽器或是伺服器使用，</p>
+                <p>CMD運行<code>npm run build</code>即可運行React內建的打包流程，</p>
+                <p>打包完成後同路徑下會新增一個build資料夾，build資料夾下包含的就是打包完的靜態文件</p>
+                <p>build資料夾下的index.html文件就是要提供給瀏覽器或是伺服器的HTML靜態文件，</p>
+                <p>查看index.html靜態文件的內容可以發現該文件引用了一個CSS文件和JS文件，這兩個文件是React應用程式將所有的CSS和JS內容整合所產生的單一靜態文件，</p>
+                <p>因此只需要這三個靜態文件即可完整運行React應用程式的所有內容，</p>
+                <p>(!!每一次重新打包，只要CSS或JS的內容有所改變，則產生的靜態文件其名稱及內容都會有所改變!!)</p>              
             </div>
         </div >
     );

@@ -11,7 +11,7 @@ function CSSBasic(props) {
             <div className="flex content-div">
                 <h1>HTML文件連結CSS文件</h1>
                 <p>於HTML文件中添加下列程式碼。</p>
-                <code>&lt;link rel="stylesheet" href="CSS文件URL"&gt;</code>
+                <code>{'<'}link rel="stylesheet" href="CSS文件URL"{'>'}</code>
             </div>
             <div className="flex content-div">
                 <h1>CSS語法(Syntax)</h1>

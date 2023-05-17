@@ -18,8 +18,8 @@ function ExpressJSRouter(props) {
                 <code>  </code>
                 <code>  const router = express.Router();</code>
                 <code>  </code>
-                <code>  router.get("/",(req,res) =&gt; {"{"} res.send("你好"); {"}"});</code>
-                <code>  router.get("/bye",(req,res) =&gt; {"{"} res.send("再見"); {"}"});</code>
+                <code>  router.get("/",(req,res) ={'>'} {'{'} res.send("你好"); {'}'});</code>
+                <code>  router.get("/bye",(req,res) ={'>'} {'{'} res.send("再見"); {'}'});</code>
                 <code>  </code>
                 <code>  exports.r = router;</code>
                 <code>  </code>
@@ -46,9 +46,9 @@ function ExpressJSRouter(props) {
                 <code>  </code>
                 <code>  const app = express();</code>
                 <code>  </code>
-                <code>  app.get("/hi",(req,res) =&gt; {"{"} res.send("hi"); {"}"});</code>
-                <code>  app.get("/good",(req,res) =&gt; {"{"} res.send("good"); {"}"});</code>
-                <code>  app.get("/bye",(req,res) =&gt; {"{"} res.send("bye"); {"}"});</code>
+                <code>  app.get("/hi",(req,res) ={'>'} {'{'} res.send("hi"); {'}'});</code>
+                <code>  app.get("/good",(req,res) ={'>'} {'{'} res.send("good"); {'}'});</code>
+                <code>  app.get("/bye",(req,res) ={'>'} {'{'} res.send("bye"); {'}'});</code>
                 <code>  </code>
                 <code>使用路由參數的做法:</code>
                 <code>  </code>
@@ -56,7 +56,7 @@ function ExpressJSRouter(props) {
                 <code>  </code>
                 <code>  const app = express();</code>
                 <code>  </code>
-                <code>  app.get("/:what",(req,res) =&gt; {"{"} res.send(req.params.what); {"}"});</code>
+                <code>  app.get("/:what",(req,res) ={'>'} {'{'} res.send(req.params.what); {'}'});</code>
                 <code>  </code>
             </div>
             <div className="flex content-div">

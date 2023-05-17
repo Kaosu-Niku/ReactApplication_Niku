@@ -81,7 +81,7 @@ function HTMLForms(props) {
                         <form method="get" action="/inputTest" target="_blank"
                             style={{ display: "inlineBlock", width: "50%", paddingLeft: "25px", borderStyle: "solid" }}>
                             <h3>text</h3>
-                            <p>輸入任意內容，行為如同&lt;textarea&gt;</p>
+                            <p>輸入任意內容，行為如同{'<'}textarea{'>'}</p>
                             <input name="text" type="text" value={stateTypeText} onChange={(event) => { setStateTypeText(event.target.value) }}></input>
                             <br />
                             <button type="submit">提交</button>
@@ -188,9 +188,9 @@ function HTMLForms(props) {
                 <h3>option</h3>
                 <p>建立列表的選項。</p>
                 <h3>datalist連結input操作步驟</h3>
-                <p>&lt;datalist&gt;添加id屬性，&lt;datalist&gt;的子元素添加&lt;option&gt;可以增加可選選項。</p>
-                <p>每個&lt;option&gt;都需添加value屬性，代表選中該選項時項表單提交的value。</p>
-                <p>要連結的&lt;input&gt;需添加list屬性，list屬性的值是datalist的id值。</p>
+                <p>{'<'}datalist{'>'}添加id屬性，{'<'}datalist{'>'}的子元素添加{'<'}option{'>'}可以增加可選選項。</p>
+                <p>每個{'<'}option{'>'}都需添加value屬性，代表選中該選項時項表單提交的value。</p>
+                <p>要連結的{'<'}input{'>'}需添加list屬性，list屬性的值是datalist的id值。</p>
                 <div className="example">
                     <h4>範例</h4>
                     <p>此處使用GET請求，提交表單後查看新分頁的網址。</p>
@@ -220,7 +220,7 @@ function HTMLForms(props) {
                 <p>建立列表的選項。</p>
                 <h3>optgroup</h3>
                 <p>建立列表的選項分類標題，此元素作為select的子元素使用，此元素不會被視為可選的選項。</p>
-                <p>使用lable屬性設置&lt;optgroup&gt;的名稱。</p>
+                <p>使用lable屬性設置{'<'}optgroup{'>'}的名稱。</p>
                 <div className="example">
                     <h4>範例</h4>
                     <p>此處使用GET請求，提交表單後查看新分頁的網址。</p>
@@ -247,7 +247,7 @@ function HTMLForms(props) {
             <div className="flex content-div">
                 <h1>textarea</h1>
                 <p>建立文本區。</p>
-                <p>(此元素等同於 &lt;input type="text"&gt;)</p>
+                <p>(此元素等同於 {'<'}input type="text"{'>'})</p>
                 <h3>maxlength</h3>
                 <p>設置字數上限</p>
                 <h3>cols</h3>

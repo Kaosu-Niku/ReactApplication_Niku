@@ -8,7 +8,7 @@ function HTMLTable(props) {
             </div>
             <div className="flex content-div">
                 <h1>table</h1>
-                <p>以下元素皆需建立於&lt;table&gt;內。</p>
+                <p>以下元素皆需建立於{'<'}table{'>'}內。</p>
                 <h3>caption</h3>
                 <p>設置表格的標題。</p>
                 <h3>tr</h3>

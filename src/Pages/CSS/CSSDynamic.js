@@ -142,19 +142,19 @@ function CSSDynamic(props) {
                     <h4>範例</h4>
                     <p>%數代表了依動畫比例取的關鍵幀，例如一個2秒的動畫，50%就代表1秒，100%就代表2秒</p>
                 </div>
-                <code>@keyframes myAnimation1 {"{"}</code>
-                <code>    0% {"{"}</code>
+                <code>@keyframes myAnimation1 {'{'}</code>
+                <code>    0% {'{'}</code>
                 <code>        background- color: red;</code>
-                <code>    {"}"}</code>
-                <code>    50% {"{"}</code>
+                <code>    {'}'}</code>
+                <code>    50% {'{'}</code>
                 <code>        transform: translate(500px);</code>
                 <code>        background-color: green;</code>
-                <code>    {"}"}</code>
-                <code>    100% {"{"}</code>
+                <code>    {'}'}</code>
+                <code>    100% {'{'}</code>
                 <code>        transform: translate(0);</code>
                 <code>        background-color: red;</code>
-                <code>    {"}"}</code>
-                <code>{"}"}</code>
+                <code>    {'}'}</code>
+                <code>{'}'}</code>
                 <h3>animation-name</h3>
                 <p>播放指定名稱的動畫</p>
                 <div className="example">

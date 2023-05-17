@@ -7,7 +7,7 @@ function HTMLAttributes(props) {
                 <h1>HTML屬性(HTML Attributes)</h1>
                 <p>屬性用於為元素附加行為和改變狀態，屬性的格式是一個key配一個value，value都是string型別。</p>
                 <p>但也有些許屬性只會有一種行為和狀態，這類屬性不需要value值。</p>
-                <p>範例: <code>&lt;p id="aaa" display&gt;&lt;/p&gt;</code></p>
+                <p>範例: <code>{'<'}p id="aaa" display{'>'}{'<'}/p{'>'}</code></p>
                 <p>將此元素的ID設置為aaa，將此元素隱藏。</p>
             </div>
             <div className="flex content-div">

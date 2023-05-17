@@ -5,16 +5,16 @@ function HTMLElement(props) {
         <div className="flex main-content-div-iframe">
             <div className="flex content-div">
                 <h1>HTML元素(HTML Element)</h1>
-                <p>一份HTML文件的內容全是由元素組成的，一個元素的格式是以一個開始標籤&lt;TagName&gt;，中間內容，一個結束標籤&lt;/TagName&gt;來表示。</p>
+                <p>一份HTML文件的內容全是由元素組成的，一個元素的格式是以一個開始標籤{'<'}TagName{'>'}，中間內容，一個結束標籤{'<'}/TagName{'>'}來表示。</p>
                 <p>尖括號之間的TagName用於定義該元素屬於什麼類型。(ex: h1是標題元素、p是文字元素...等等)。</p>
-                <p>範例: <code>&lt;p&gt;文字文字文字&lt;/p&gt;</code></p>
+                <p>範例: <code>{'<'}p{'>'}文字文字文字{'<'}/p{'>'}</code></p>
                 <p>這會在網頁上呈現一段文字。</p>
             </div>
             <div className="flex content-div">
                 <h1>空元素(Empty Element)</h1>
                 <p>有些元素並不包含結束標籤，同時也代表不包含中間內容，這些元素稱為空元素。</p>
                 <p>這些元素具有特殊性質，依靠屬性的設定來表示內容。</p>
-                <p>範例: <code>&lt;img src=""&gt;</code></p>
+                <p>範例: <code>{'<'}img src=""{'>'}</code></p>
                 <p>這會在網頁上呈現圖片。</p>
             </div>
             <br />

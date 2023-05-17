@@ -28,7 +28,7 @@ function HTMLImage(props) {
                 <h1>map & area</h1>
                 <h3>map</h3>
                 <p>建立圖像映射(滑鼠點擊可以回饋的區域)。</p>
-                <p>使用name屬性設置連結命名(要和&lt;img&gt;連結)</p>
+                <p>使用name屬性設置連結命名(要和{'<'}img{'>'}連結)</p>
                 <p>(img元素必須使用usemap屬性設置要連結的map的name屬性名稱[前方要加上#])</p>
                 <h3>area</h3>
                 <p>建立映射區域，此元素必須作為map的子元素使用。</p>

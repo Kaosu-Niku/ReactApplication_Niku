@@ -24,7 +24,7 @@ function JavaScriptElement(props) {
                 <p>返回該元素和其後代的完整HTML內容</p>
                 <div className="example">
                     <h4>範例</h4>
-                    <code style={{ marginBottom: "25px" }}>&lt;div id="text"&gt; Hello &lt;p&gt;ByeBye&lt;/p&gt; &lt;/div&gt;</code>
+                    <code style={{ marginBottom: "25px" }}>{'<'}div id="text"{'>'} Hello {'<'}p{'>'}ByeBye{'<'}/p{'>'} {'<'}/div{'>'}</code>
                     <div style={{ height: "25px" }}></div>
                     <div hidden>
                         <div id="text">

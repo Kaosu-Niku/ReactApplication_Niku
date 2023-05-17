@@ -12,7 +12,7 @@ function CSSRWD(props) {
             <div className="flex content-div">
                 <h1>HTML文件設定RWD</h1>
                 <p>於HTML文件中添加下列程式碼。</p>
-                <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+                <code>{'<'}meta name="viewport" content="width=device-width, initial-scale=1.0"{'>'}</code>
             </div>
             <div className="flex content-div">
                 <h1>RWD的設計重點</h1>
@@ -42,17 +42,17 @@ function CSSRWD(props) {
                         <span className="test"></span>
                     </div>
                 </div>
-                <code>@media (min-width: 1000px){"{"}</code>
-                <code>  .test{"{"}</code>
+                <code>@media (min-width: 1000px){'{'}</code>
+                <code>  .test{'{'}</code>
                 <code>      background-color: black;</code>
-                <code>  {"}"}</code>
-                <code>{"}"}</code>
+                <code>  {'}'}</code>
+                <code>{'}'}</code>
                 <br />
-                <code>@media (max-width: 1000px){"{"}</code>
-                <code>  .test{"{"}</code>
+                <code>@media (max-width: 1000px){'{'}</code>
+                <code>  .test{'{'}</code>
                 <code>      background-color: red;</code>
-                <code>  {"}"}</code>
-                <code>{"}"}</code>
+                <code>  {'}'}</code>
+                <code>{'}'}</code>
             </div>
         </div>
     );

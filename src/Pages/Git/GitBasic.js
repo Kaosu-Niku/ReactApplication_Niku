@@ -90,11 +90,11 @@ function GitBasic(props) {
                 <h1>數據衝突</h1>
                 <p>如果AB雙方對同一份檔案的同一個部分的內容進行修改，A先push後B再pull，</p>
                 <p>這時會產生衝突，B打開產生衝突的檔案會看到以下內容</p>
-                <code>  &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code>
+                <code>  {'<'}{'<'}{'<'}{'<'}{'<'}{'<'}{'<'} HEAD</code>
                 <code>  (A的內容)</code>
                 <code>  =======</code>
                 <code>  (B的內容)</code>
-                <code>  &gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>
+                <code>  {'>'}{'>'}{'>'}{'>'}{'>'}{'>'}{'>'}</code>
                 <p>解決方法是必須手動修改該檔案，A或B的內容只能擇一保留，另一個必須清除，清除完後再一次 add commit 即可。</p>
             </div>
         </div>
