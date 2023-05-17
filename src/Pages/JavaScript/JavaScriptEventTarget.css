@@ -1,0 +1,9 @@
+.test-label {
+    display: inline-block;
+    width: 150px;
+    margin-left: 25px;
+}
+
+.test-radio {
+    margin-left: 25px;
+}

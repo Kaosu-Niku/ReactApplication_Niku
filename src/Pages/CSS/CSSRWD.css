@@ -1,0 +1,18 @@
+.test {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+
+@media (min-width: 1000px) {
+    .test {
+        background-color: black;
+    }
+}
+
+@media (max-width: 1000px) {
+    .test {
+        background-color: red;
+    }
+}

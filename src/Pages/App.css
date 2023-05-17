@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+body {
+  margin: 0;
+}
+
+.root-div {
+  flex-direction: column;
+}
+
+.header-position-div {
+  /*? display:flex 和 position:fixed 之間會產生衝突，因次分成兩個div個別執行 */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.header-flex-div {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 75px;
+  height: auto;
+  border-style: solid;
+  margin: 0;
+  background-color: rgb(75, 75, 75);
+}
+
+.header-div-img {
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.header-div-button {
+  align-self: center;
+  border-style: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: none;
+  background-color: rgb(75, 75, 75);
+  color: white;
+}
+
+.header-div-button:hover {
+  background-color: rgb(90, 90, 90);
+}
+
+.main-position-div {
+  position: absolute;
+  top: 78px;
+  bottom: 53px;
+  width: 100%;
+}
+
+.main-flex-div {
+  flex-direction: row;
+}
+
+.main-sidebar-position-div {
+  position: absolute;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  border-style: solid;
+  margin: 0;
+  overflow: auto;
+  background-color: rgb(75, 75, 75);
+}
+
+.main-sidebar-flex-div {
+  flex-direction: column;
+}
+
+.main-sidebar-div-button {
+  align-self: stretch;
+  width: 100%;
+  min-height: 50px;
+  height: auto;
+  border-style: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: none;
+  background-color: rgb(75, 75, 75);
+  color: white;
+}
+
+.main-sidebar-div-button:hover {
+  background-color: rgb(90, 90, 90);
+}
+
+.main-section-position-div {
+  position: absolute;
+  right: 0;
+  width: 10%;
+  height: 100%;
+  border-style: solid;
+  margin: 0;
+  overflow: auto;
+  background-color: rgb(75, 75, 75);
+}
+
+.main-section-flex-div {
+  flex-direction: column;
+}
+
+.main-section-div-button {
+  align-self: stretch;
+  width: 100%;
+  min-height: 50px;
+  height: auto;
+  border-style: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: none;
+  background-color: rgb(75, 75, 75);
+  color: white;
+}
+
+.main-section-div-button:hover {
+  background-color: rgb(90, 90, 90);
+}
+
+.main-content-position-div {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  height: 100%;
+  border-style: solid;
+  margin: 0;
+  background-color: rgb(50, 50, 50);
+  background-color: white;
+}
+
+.main-content-flex-div {
+  flex-direction: column;
+  height: 100%;
+}
+
+.main-content-div-iframe {
+  height: 100%;
+  overflow: auto;
+}
+
+.footer-position-div {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.footer-flex-div {
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  border-style: solid;
+  background-color: rgb(75, 75, 75);
+}
+
+.footer-div-child {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}

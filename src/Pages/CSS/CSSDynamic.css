@@ -1,0 +1,66 @@
+.duration1:hover {
+    transform: translate(500px);
+    transition-duration: 1s;
+}
+
+.duration2:hover {
+    transform: translate(500px);
+    transition-duration: 3s;
+}
+
+.delay1:hover {
+    transform: translate(500px);
+    transition-duration: 1s;
+    transition-delay: 1s;
+}
+
+.delay2:hover {
+    transform: translate(500px);
+    transition-duration: 1s;
+    transition-delay: 3s;
+}
+
+@keyframes myAnimation1 {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        transform: translate(500px);
+        background-color: green;
+    }
+
+    100% {
+        transform: translate(0);
+        background-color: red;
+    }
+}
+
+@keyframes myAnimation2 {
+    0% {
+        background-color: red;
+    }
+
+    100% {
+        transform: translate(500px);
+        background-color: green;
+    }
+}
+
+.animation-name {
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+.animation-name:hover {
+    animation-name: myAnimation1;
+}
+
+.fill-mode {
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+.fill-mode:hover {
+    animation-name: myAnimation2;
+}

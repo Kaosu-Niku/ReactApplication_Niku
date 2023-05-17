@@ -1,0 +1,23 @@
+.test-label {
+    display: inline-block;
+    width: 150px;
+    margin-left: 25px;
+}
+
+.test-radio {
+    margin-left: 25px;
+}
+
+#transition-test {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition-duration: 2s;
+}
+
+#transition-test:hover {
+    width: 500px;
+    background-color: green;
+
+}
