@@ -103,19 +103,14 @@ body {
 }
 
 .main-section-position-div {
-  @media screen and (mix-width: 300px){
-
-  }
-  @media screen and (mix-width: 768px){
-    position: absolute;
-    right: 0;
-    width: 10%;
-    height: 100%;
-    border-style: solid;
-    margin: 0;
-    overflow: auto;
-    background-color: rgb(75, 75, 75);
-  }
+  position: absolute;
+  right: 0;
+  width: 10%;
+  height: 100%;
+  border-style: solid;
+  margin: 0;
+  overflow: auto;
+  background-color: rgb(75, 75, 75);
 }
 
 .main-section-flex-div {
