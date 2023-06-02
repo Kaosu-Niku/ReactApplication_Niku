@@ -15,17 +15,19 @@ function App(props) {
       <div className="header-position-div">
         <div className="flex header-flex-div">
           <img id="headerImg" className="header-div-img" src="/Asset/Image/Icon.png" alt="icon" />
-          <HeaderButton headerButtonId="buttonHome" headerButtonContent="Home" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
-          <HeaderButton headerButtonId="buttonHTML" headerButtonContent="HTML" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
-          <HeaderButton headerButtonId="buttonCSS" headerButtonContent="CSS" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
-          <HeaderButton headerButtonId="buttonJavaScript" headerButtonContent="JavaScript" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
-          <HeaderButton headerButtonId="buttonTypeScript" headerButtonContent="TypeScript" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
-          <HeaderButton headerButtonId="buttonReact" headerButtonContent="React" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
-          <HeaderButton headerButtonId="buttonNodeJS" headerButtonContent="NodeJS" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
-          <HeaderButton headerButtonId="buttonExpressJS" headerButtonContent="ExpressJS" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
-          <HeaderButton headerButtonId="buttonSQL" headerButtonContent="SQL" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
-          <HeaderButton headerButtonId="buttonGit" headerButtonContent="Git" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
-          <HeaderButton headerButtonId="buttonHelp" headerButtonContent="Help" />
+          <div className="flex header-item-flex-div">
+            <HeaderButton headerButtonId="buttonHome" headerButtonContent="Home" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
+            <HeaderButton headerButtonId="buttonHTML" headerButtonContent="HTML" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
+            <HeaderButton headerButtonId="buttonCSS" headerButtonContent="CSS" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
+            <HeaderButton headerButtonId="buttonJavaScript" headerButtonContent="JavaScript" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
+            <HeaderButton headerButtonId="buttonTypeScript" headerButtonContent="TypeScript" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
+            <HeaderButton headerButtonId="buttonReact" headerButtonContent="React" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
+            <HeaderButton headerButtonId="buttonNodeJS" headerButtonContent="NodeJS" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
+            <HeaderButton headerButtonId="buttonExpressJS" headerButtonContent="ExpressJS" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
+            <HeaderButton headerButtonId="buttonSQL" headerButtonContent="SQL" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
+            <HeaderButton headerButtonId="buttonGit" headerButtonContent="Git" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
+            <HeaderButton headerButtonId="buttonHelp" headerButtonContent="Help" />
+          </div>
         </div>
       </div>
       <div className="main-position-div">
