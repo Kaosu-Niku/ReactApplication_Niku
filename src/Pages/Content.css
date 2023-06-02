@@ -1,65 +1,176 @@
-.main-content-div-iframe {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 0;
+@media screen and (min-width:300px) {
+    .main-content-div-iframe {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .content-div {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .content-div>* {
+        width: 85%;
+        text-align: left;
+    }
+    
+    .example {
+        border-style: inset;
+        border-width: 2px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .function-div {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        border-style: outset;
+    }
+    
+    h1 {
+        color: black;
+        font-size: 30px;
+    }
+    
+    h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    
+    p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: black;
+        font-size: 18px;
+    }
+    
+    code {
+        padding: 2px;
+        background-color: black;
+        color: white;
+        white-space: pre-wrap;
+        font-size: 14px;
+    }
+    
+    output {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        border-style: inset;
+        font-size: 14px;
+    }
 }
 
-.content-div {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 25px;
+/*! ------------------------------------------- */
+
+@media screen and (min-width:768px) {
+    .main-content-div-iframe {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .content-div {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .content-div>* {
+        width: 95%;
+        text-align: left;
+    }
+    
+    .example {
+        border-style: inset;
+        border-width: 2px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .function-div {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        border-style: outset;
+    }
+    
+    h1 {
+        color: black;
+    }
+    
+    h3 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    p {
+    
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: black;
+    }
+    
+    code {
+        padding: 10px;
+        background-color: black;
+        color: white;
+        white-space: pre-wrap;
+    }
+    
+    output {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        border-style: inset;
+    }
 }
 
-.content-div>* {
-    width: 95%;
-    text-align: left;
+
+/* 客製化滾動條 */
+
+::-webkit-scrollbar {
+
+    width: 7px;
+
 }
 
-.example {
-    border-style: inset;
-    border-width: 2px;
-    padding-bottom: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
+::-webkit-scrollbar-button {
+
+    background: transparent;
+
+    border-radius: 4px;
+
 }
 
-.function-div {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    border-style: outset;
+::-webkit-scrollbar-track-piece {
+
+    background: transparent;
+
 }
 
-h1 {
-    color: black;
+::-webkit-scrollbar-thumb {
+
+    border-radius: 4px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    border: 1px solid slategrey;
+
 }
 
-h3 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
+::-webkit-scrollbar-track {
 
-p {
+    box-shadow: transparent;
 
-    margin-top: 5px;
-    margin-bottom: 5px;
-    color: black;
-}
-
-code {
-    padding: 10px;
-    background-color: black;
-    color: white;
-    white-space: pre-wrap;
-}
-
-output {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    border-style: inset;
 }
