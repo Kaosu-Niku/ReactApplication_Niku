@@ -47,6 +47,9 @@ import JavaScriptEventObject from '../../Pages/JavaScript/JavaScriptEventObject.
 //TypeScript
 import TypeScriptBasic from '../../Pages/TypeScript/TypeScriptBasic.js';
 import TypeScriptSyntax from '../../Pages/TypeScript/TypeScriptSyntax.js';
+//Jquery
+import JqueryBasic from '../../Pages/Jquery/JqueryBasic.js';
+import JquerySyntax from '../../Pages/Jquery/JquerySyntax.js';
 //React
 import ReactBasic from '../../Pages/React/ReactBasic.js';
 import ReactJSX from '../../Pages/React/ReactJSX.js';
@@ -116,6 +119,9 @@ function Content(props) {
 
         case "TypeScript/Basic": return (<TypeScriptBasic />);
         case "TypeScript/Syntax": return (<TypeScriptSyntax />);
+
+        case "Jquery/Basic": return (<JqueryBasic />);
+        case "Jquery/Syntax": return (<JquerySyntax />);
 
         case "React/Basic": return (<ReactBasic />);
         case "React/JSX": return (<ReactJSX />);

@@ -13,6 +13,9 @@ function SidebarButton(props) {
         case "TypeScript":
             buttonNameArray = ["Basic", "Syntax"]
             break;
+        case "Jquery":
+            buttonNameArray = ["Basic", "Syntax"]
+            break;
         case "React":
             buttonNameArray = ["Basic", "JSX", "Component", "Hook", "Trap"]
             break;

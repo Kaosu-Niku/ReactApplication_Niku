@@ -21,6 +21,7 @@ function App(props) {
             <HeaderButton headerButtonId="buttonCSS" headerButtonContent="CSS" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
             <HeaderButton headerButtonId="buttonJavaScript" headerButtonContent="JavaScript" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
             <HeaderButton headerButtonId="buttonTypeScript" headerButtonContent="TypeScript" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
+            <HeaderButton headerButtonId="buttonJquery" headerButtonContent="Jquery" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
             <HeaderButton headerButtonId="buttonReact" headerButtonContent="React" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
             <HeaderButton headerButtonId="buttonNodeJS" headerButtonContent="NodeJS" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
             <HeaderButton headerButtonId="buttonExpressJS" headerButtonContent="ExpressJS" headerButtonSetStateContent={setStateContent} headerButtonSetStateTag={setStateTag} />
